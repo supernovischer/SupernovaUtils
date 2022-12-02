@@ -1,11 +1,13 @@
-import { Client } from 'discord.js';
+import { Client, GatewayIntentBits, Partials } from 'discord.js';
 import { TOKEN } from './config';
-import { onReady } from './listeners';
+import { onMessageCreate, onReady } from './listeners';
 
 const client = new Client({
-    intents: [],
+    intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.DirectMessages, GatewayIntentBits.MessageContent],
+    partials: [Partials.Channel]
 });
 
 onReady(client);
+onMessageCreate(client);
 
 client.login(TOKEN)
