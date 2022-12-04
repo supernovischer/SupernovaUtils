@@ -10,8 +10,8 @@
     "build": "tsc",
     "check-types": "tsc --noEmit",
     "dev:main": "nodemon src/main.ts",
-    "register-guild-commands" : "ts-node src/register-guild-commands.ts",
-    "dev" : "run-s register-guild-commands dev:main",
+    "register-guild-commands": "ts-node src/register-guild-commands.ts",
+    "dev": "run-s register-guild-commands dev:main",
     "start": "node build/main.js"
   },
   "devDependencies": {
@@ -26,8 +26,6 @@
     "typescript": "^4.9.3"
   },
   "dependencies": {
-    "@discordjs/builders": "^1.4.0",
-    "@discordjs/rest": "^1.4.0",
     "discord-api-types": "^0.37.20",
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3"
