@@ -1,4 +1,4 @@
-import { REST } from "@discordjs/rest";
+import { REST } from "discord.js";
 import { APPLICATION_ID, GUILD_ID, TOKEN } from "./config";
 import { SlashCommands } from "./slash-commands"
 import { Routes } from 'discord-api-types/v10';

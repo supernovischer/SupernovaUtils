@@ -1,4 +1,4 @@
-import { Client, CommandInteraction } from "discord.js";
+import { Client, ChatInputCommandInteraction, CommandInteraction } from "discord.js";
 import { SlashCommands } from '../slash-commands';
 
 export const onInteractionCreate = (client: Client) => {
